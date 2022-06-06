@@ -29,3 +29,21 @@ path.join(__dirname,'file.txt')
 - 语法转换（es6, less, scss）等
 - 公共文件抽离，开发阶段的热更新
 gulp基于流（stream）的自动化构建工具。webpack是一个文件打包工具，可以把项目中各种JS，CSS等打包合并为一个或者多个文件，主要用于模块化方案和预编译模块方案
+
+
+
+### HTTP
+- 200 请求成功
+- 301 永久重定向，浏览器会有缓存
+- 302 临时重定向，浏览器不会记住
+- 400 客户端请求语法错误
+- 404 请求资源没有被找到
+- 500 服务器端错误
+
+### Content-Type
+- text/plain
+- text/html
+- text/css
+- application/javascript
+- application/json
+- image/jpeg
