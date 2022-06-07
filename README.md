@@ -110,3 +110,8 @@ book.save();
 
 
 ![image-20220607235433214](public/img/image-20220607235433214.png)
+
+### 导入mongoDB
+```sh
+mongoimport -d test -c users --file [filepath]
+```
