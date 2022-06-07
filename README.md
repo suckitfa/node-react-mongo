@@ -74,3 +74,9 @@ fs.readFile('./file.txt',(err,res) => {
 - promise
 - co + generator
 - async + await
+
+### 数据库中的索引, mongoDB
+提高查询效率
+Indexes support the efficient execution of queries in MongoDB. Without indexes, MongoDB must perform a collection scan, i.e. scan every document in a collection, to select those documents that match the query statement. If an appropriate index exists for a query, MongoDB can use the index to limit the number of documents it must inspect.
+
+索引在MongoDB中支持高效的查询操作。没有索引，MongoDB需要对集合（collections）进行一次扫描（就是遍历整个集合）, 扫描集合中的每个文档，选出那些匹配查询条件的文档（documnet）. 如果查询中存在一个合适的索引，MongoDB可以使用索引来控制需要检查的文档的数量。
