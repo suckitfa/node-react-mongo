@@ -47,3 +47,24 @@ gulp基于流（stream）的自动化构建工具。webpack是一个文件打包
 - application/javascript
 - application/json
 - image/jpeg
+
+### 静态资源
+服务器端不用处理，可以直接响应给客户端的资源就是静态资源
+- link href
+- script src
+- iframe src
+- video
+- audio
+
+### 动态资源
+服务器端根据传入的参数响应内容
+
+### 异步读取文件-使用回调
+```js
+const fs = require('fs')
+fs.readFile('./file.txt',(err,res) => {
+    if (err) console.err(err)
+    else console.log(res)
+})
+```
+![image-20220607082334130](public/img/image-20220607082334130.png)

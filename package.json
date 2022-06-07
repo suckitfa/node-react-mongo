@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -16,5 +15,8 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-less": "^5.0.0",
     "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "mime": "^3.0.0"
   }
 }
