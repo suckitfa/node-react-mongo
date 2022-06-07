@@ -80,3 +80,33 @@ fs.readFile('./file.txt',(err,res) => {
 Indexes support the efficient execution of queries in MongoDB. Without indexes, MongoDB must perform a collection scan, i.e. scan every document in a collection, to select those documents that match the query statement. If an appropriate index exists for a query, MongoDB can use the index to limit the number of documents it must inspect.
 
 索引在MongoDB中支持高效的查询操作。没有索引，MongoDB需要对集合（collections）进行一次扫描（就是遍历整个集合）, 扫描集合中的每个文档，选出那些匹配查询条件的文档（documnet）. 如果查询中存在一个合适的索引，MongoDB可以使用索引来控制需要检查的文档的数量。
+
+
+### mongoose
+```js
+const mongoose = require('mongoose')
+mongoose.connect('mongodb://admin:123456@localhost:27017')
+.then(() => console.log('链接成功'))
+.catch(e => console.error(e))
+
+const bookSchema = new mongoose.Schema({
+    bookName: String,
+    author: String,
+    isPublished: Boolean
+})
+
+const Book = mongoose.model('Book',bookSchema);
+
+const book = new Book({
+    bookName:"《编程大全》",
+    author:"牛逼",
+    isPublished:true,
+})
+
+book.save();
+```
+> 集合名称首字母必须大写，而MongoDB中的集合会将这个集合名字小写，并在后面加一个s
+
+
+
+![image-20220607235433214](public/img/image-20220607235433214.png)
