@@ -68,3 +68,9 @@ fs.readFile('./file.txt',(err,res) => {
 })
 ```
 ![image-20220607082334130](public/img/image-20220607082334130.png)
+
+### 异步解决方案
+- 回调
+- promise
+- co + generator
+- async + await
